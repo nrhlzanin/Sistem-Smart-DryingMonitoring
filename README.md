@@ -38,19 +38,6 @@ Data dari sensor dikirim melalui mikrokontroler ke **server IoT**, kemudian divi
 
 ---
 
-## Arsitektur Sistem
-
-```mermaid
-flowchart TD
-    A[Sensor Suhu & Kelembapan] --> B[Mikrokontroler (ESP32)]
-    C[Sensor Kadar Air] --> B
-    B -->|Kirim Data via WiFi| D[Server IoT / Cloud Database]
-    D --> E[Dashboard Web]
-    D --> F[Aplikasi Mobile]
-```
-
----
-
 ## Komponen yang Digunakan
 
 | Komponen                     | Deskripsi                                             |
